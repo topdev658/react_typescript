@@ -1,0 +1,29 @@
+stages:
+  - build
+  - deploy
+
+build-upload:
+  stage: build
+  image: docker
+  services: 
+    - docker:dind
+  variables:
+    CI_DEBUG_PIPELINE: "true"
+  script:
+    - docker login $AZURE_REGISTRY_URL -u $AZURE_REGISTRY_USERNAME -p $AZURE_REGISTRY_PASSWORD
+    - docker build -t $AZURE_REGISTRY_URL/workspaceapp-fontendts:latest .
+    - docker push $AZURE_REGISTRY_URL/workspaceapp-fontendts:latest
+  only:
+    - development
+
+deploy:
+  stage: deploy
+  needs: ['build-upload']
+  script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" > server.pem
+    - chmod 400 server.pem
+    - ssh -o StrictHostKeyChecking=no -i server.pem ubuntu@20.115.83.193 'bash /home/ubuntu/scripts/deployfrontend.sh'
+  only:
+    - development

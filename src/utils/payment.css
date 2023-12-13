@@ -1,0 +1,37 @@
+/* PaymentForm.css */
+
+.payment-form {
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-element {
+	width: 100%; /* Make the card element take up 100% of the container width */
+	border: 1px solid #ccc;
+	padding: 15px;
+	border-radius: 4px;
+	margin-bottom: 15px;
+  }
+  
+  .pay-button {
+	width: 100%; /* Make the button take up 100% of the container width */
+	background-color: #3498db;
+	color: #fff;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .pay-button:hover {
+	background-color: #2980b9;
+  }
+  
+  /* Additional styles can be added to enhance the overall design */
+  

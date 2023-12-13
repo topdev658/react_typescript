@@ -1,0 +1,39 @@
+/* Add these styles to your CSS file or use a styling solution like styled-components */
+
+.card-input-container {
+	width: 100%;
+	max-width: 500px; /* Adjust the width as needed */
+	margin: 0 auto;
+  }
+  
+  .card-label {
+	font-size: 20px;
+	margin-bottom: 10px;
+	color: #333;
+  }
+  
+  .card-element-container {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .card-number,
+  .expiration-date,
+  .cvv {
+	margin-bottom: 15px;
+  }
+  
+  label {
+	font-size: 16px;
+	color: #555;
+  }
+  
+  .card-element-container {
+	border: 1px solid #ddd;
+	padding: 15px; /* Adjust the padding for better height */
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add more styles as needed for your application */
+  

@@ -1,0 +1,549 @@
+@media only screen and (max-width: 1920px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (max-width: 1700px) {
+  .qa-boxes {
+    flex: 0 0 38%;
+    max-width: 38%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+}
+
+@media only screen and (max-width: 1367px) {
+  .top-action-bar {
+    margin: 30px auto 10px;
+    max-width: 90%;
+    padding: 8px 15px;
+  }
+  .inner-scroller {
+    max-height: calc(100vh - 160px);
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+  .documents-table thead th {
+    padding: 10px 14px;
+  }
+  .documents-table tbody tr.folder-stage-1 td:first-child {
+    padding-left: 40px;
+  }
+  .workspace-wrap {
+    padding-top: 31px;
+  }
+  .top-action-bar-2 {
+    padding: 0 50px 35px;
+  }
+  .workspace-wrap,
+  .qa-wrap,
+  .participates-wrap,
+  .inner-scroller.task-page,
+  .inner-scroller.log-page,
+  .top-action-bar.style-2,
+  .settings-wrap,
+  .billing-wrap,
+  .profile-wrap {
+    padding-left: 50px;
+  }
+  .qa-foot span {
+    margin-right: 10px;
+  }
+  .participates-wrap {
+    padding-right: 50px;
+  }
+  .part-team + .part-team {
+    margin-left: 95px;
+  }
+  .part-team-add {
+    min-width: 16%;
+  }
+  .billing-plans {
+    flex: 0 0 36%;
+    max-width: 36%;
+  }
+  .billing-invoices {
+    flex: 0 0 64%;
+    max-width: 64%;
+    padding-left: 33px;
+  }
+  .secondary-nav-links {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+}
+
+/* common css for below screen 1199 */
+@media only screen and (max-width: 1199px) {
+  .qa-boxes {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+  .part-team + .part-team {
+    margin-left: 50px;
+  }
+  .part-team-add {
+    min-width: unset;
+    flex: 0 0 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+  .billing-plan-btns .btn {
+    white-space: nowrap;
+  }
+  .billing-plan-title {
+    font-size: 14px;
+  }
+  .top-nav-icon-btn {
+    margin-left: 20px;
+  }
+}
+
+/* common css for below screen 991 */
+@media only screen and (max-width: 991px) {
+  .nav-open .top-nav-links {
+    transform: translateX(0%);
+  }
+  .top-nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    min-height: 100vh;
+    padding: 30px;
+    background-color: #000;
+    width: 49vw;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    transform: translateX(-100%);
+    transition: all 0.4s ease-in-out;
+  }
+  .top-nav-links ul li {
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .top-nav-links ul li:last-child {
+    border-bottom: none;
+  }
+  .top-nav-links ul li a {
+    font-size: 18px;
+    margin-right: 0;
+  }
+  .top-nav-links ul li a.active::after {
+    bottom: 0;
+    height: 3px;
+  }
+  .nav-open .top-nav-overlay {
+    z-index: 3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .top-nav-logo {
+    flex: 1;
+  }
+  .top-nav-toggle-btn {
+    position: relative;
+    height: 30px;
+    z-index: 111;
+    background-color: transparent;
+    width: 30px;
+    padding: 0;
+    margin-left: 20px;
+  }
+  .top-nav-toggle-btn span {
+    position: absolute;
+    top: 12px;
+    left: 0px;
+    right: 0;
+    display: block;
+    padding: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    font-size: 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    margin: auto;
+    margin-top: 2px;
+  }
+  .top-nav-toggle-btn span:before,
+  .top-nav-toggle-btn span:after {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    content: "";
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+  }
+  .top-nav-toggle-btn span:after {
+    -webkit-transform: translateY(250%);
+    transform: translateY(250%);
+    -moz-transform: translateY(250%);
+    -ms-transform: translateY(250%);
+    top: 4px;
+  }
+  .top-nav-toggle-btn span:before {
+    -webkit-transform: translateY(-250%);
+    transform: translateY(-250%);
+    -moz-transform: translateY(-250%);
+    -ms-transform: translateY(-250%);
+    top: -4px;
+  }
+  .nav-open .top-nav-toggle-btn span {
+    -webkit-background: none;
+    -moz-background: none;
+    -ms-background: none;
+    -o-background: none;
+    background: none;
+  }
+  .nav-open .top-nav-toggle-btn span:before {
+    -webkit-transform: translateY(0) rotate(45deg);
+    -moz-transform: translateY(0) rotate(45deg);
+    -ms-transform: translateY(0) rotate(45deg);
+    transform: translateY(0) rotate(45deg);
+    top: 0px;
+    background: #fff;
+  }
+  .nav-open .top-nav-toggle-btn span:after {
+    -webkit-transform: translateY(0) rotate(-45deg);
+    -moz-transform: translateY(0) rotate(-45deg);
+    -ms-transform: translateY(0) rotate(-45deg);
+    transform: translateY(0) rotate(-45deg);
+    top: 0px;
+    background: #fff;
+  }
+  .qa-page .top-action-bar-2 {
+    margin-top: 56px;
+    padding-bottom: 56px;
+  }
+  .qa-wrap {
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-wrap: wrap;
+  }
+  .qa-wrap::before {
+    content: none;
+    display: none;
+  }
+  .qa-boxes {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+  .qa-selected-boxes {
+    margin-top: 50px;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .part-teams-add-btn {
+    margin-bottom: 26px;
+  }
+  .part-team + .part-team {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  .task-filters .form-group + .form-group {
+    margin-left: 16px;
+  }
+  .task-filters .form-group {
+    flex: 0 0 164px;
+    max-width: 164px;
+  }
+  .billing-wrap {
+    padding-left: 15px;
+  }
+  .billing-plans,
+  .billing-invoices {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0;
+  }
+  .billing-invoices {
+    margin-top: 50px;
+  }
+  .delete-workspace-group {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .top-action-bar {
+    margin: 20px auto 10px;
+    max-width: 100%;
+    padding: 8px 15px;
+  }
+  /* login */
+  .login-wrap {
+    padding-top: 41px;
+  }
+  .login-wrap .logo-wrap {
+    margin-bottom: 54px;
+  }
+  .login-form-title {
+    font-size: 20px;
+  }
+  .login-form-inner {
+    margin-top: 71px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .login-already-signup {
+    margin-top: 65px;
+  }
+  /* configure-2fa */
+  .form-otp-input {
+    height: 50px;
+    width: 50px;
+    font-size: 38px;
+  }
+  .qa-page .top-action-bar-2 {
+    margin-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .qa-boxes {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .top-action-bar-2 .priority-badge {
+    margin-left: 15px;
+  }
+  .add-btn-wrap span {
+    margin-left: 10px;
+  }
+  .qa-head .qa-title {
+    text-align: left;
+    display: block;
+  }
+  .qa-foot {
+    flex-wrap: wrap;
+  }
+  .qa-foot span {
+    margin-right: 10px;
+    margin-bottom: 12px;
+  }
+  .qa-wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .qa-selected-boxes {
+    padding-right: 0;
+  }
+  .qa-selected-box {
+    padding: 15px;
+  }
+  .qa-selected-box-edit-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .qa-selected-box textarea.form-control {
+    min-height: 124px;
+  }
+  .workspace-img img {
+    margin-bottom: 21px;
+    max-height: 150px;
+  }
+  .workspace-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .workspace-con p {
+    margin-bottom: 52px;
+  }
+  .workspace-con p,
+  .workspace-info p {
+    font-size: 14px;
+  }
+  .workspace-con p {
+    margin-bottom: 32px;
+  }
+  .workspace-wrap,
+  .qa-wrap,
+  .participates-wrap,
+  .inner-scroller.task-page,
+  .inner-scroller.log-page,
+  .top-action-bar.style-2,
+  .settings-wrap,
+  .billing-wrap,
+  .profile-wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 24px;
+  }
+  .participates-note {
+    margin-bottom: 29px;
+  }
+  .participates-wrap {
+    padding-top: 36px;
+  }
+  .part-team {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .team-user-wrap {
+    min-width: 200px;
+  }
+  .team-user-role {
+    white-space: nowrap;
+  }
+  .settings-wrap .participates-note {
+    margin-bottom: 48px;
+  }
+  .settings-profile-wrap {
+    display: inline-block;
+    margin-bottom: 54px;
+  }
+  .secondary-nav-links {
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .billing-invoices tr th,
+  .billing-invoices tr td {
+    padding: 12px 20px;
+  }
+  .profile-wrap {
+    padding-top: 20px;
+  }
+  .account-info {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .inner-scroller {
+    max-height: calc(100vh - 210px);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+  }
+  .top-action-bar-search {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 15px;
+  }
+  .top-nav-storage {
+    display: none;
+  }
+  .top-action-bar .btn + .btn {
+    margin-left: 7px;
+  }
+  .top-nav-icon-btn {
+    margin-left: 27px;
+  }
+  .top-nav-icon-btn:first-child {
+    margin-left: 0;
+  }
+  .top-nav-links {
+    width: 70vw;
+  }
+  .task-filters .form-group + .form-group {
+    margin-left: 0;
+  }
+  .task-filters .form-group {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 15px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  .settings-wrap .participates-note {
+    margin-bottom: 28px;
+  }
+  .settings-profile-wrap {
+    margin-bottom: 34px;
+  }
+  .settings-title {
+    margin-bottom: 23px;
+    margin-top: 23px;
+  }
+  .form-group.setting-purpose-group {
+    margin-top: 0;
+  }
+  .settings-group,
+  .settings-wrap .form-group,
+  .settings-wrap .form-check {
+    margin-bottom: 25px;
+    max-width: unset;
+  }
+  .top-action-bar-2 {
+    padding: 0 15px 25px;
+  }
+  .workspace-box + .workspace-box {
+    margin-left: 15px;
+  }
+  .workspace-box {
+    height: 150px;
+    width: 150px;
+  }
+  .add-btn-wrap {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .top-action-bar-2 .priority-badge {
+    margin-left: 0;
+    margin-right: 15px;
+    margin-top: 25px;
+  }
+  .notification-box {
+    right: -210px;
+    width: 320px;
+  }
+}
+
+/* common css for below screen 479 */
+@media only screen and (max-width: 479px) {
+}
+
+@media only screen and (max-width: 380px) {
+}
+
+@media only screen and (max-width: 350px) {
+}
+
+/* common css for screen size between 480 to 767 */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+/* common css for screen size between 568 to 767 */
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 567px) and (max-width: 767px) {
+}
+
+/* common css for screen size between 991 to 1199 */
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+}
+
+/* common css for screen size between 769 to 1199 */
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+}
+
+/* common css for screen size between 1025 to 1280 */
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/* common css for screen size between 1445 to 1550 */
+@media only screen and (min-width: 1445px) and (max-width: 1550px) {
+}
